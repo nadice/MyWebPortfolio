@@ -109,16 +109,22 @@ nav{
     color: rgb(0, 78, 109);
 }
 
-.dropdown{
-    z-index: 100;
-    position: absolute;
+.dropdown {
+    z-index: 1000;
+    position: fixed; /* Changed from absolute to fixed */
     top: 0;
-    transform: translateY(-500px);
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100vh; /* Full screen height */
     backdrop-filter: brightness(40%) blur(3px);
+    background: rgba(0, 0, 0, 0.6); /* Optional: a slight dark background */
     box-shadow: 0 0 20px black;
-    transition: 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%); /* Start hidden above screen */
+    transition: transform 0.3s ease-in-out; /* Smoother transition */
 }
 
 .dropdown .links a{
@@ -134,7 +140,9 @@ nav{
 .dropdown .links a:hover{
     background-color: rgb(0, 78, 109);
 }
-
+.dropdown.show {
+    transform: translateY(0); /* Slide into view */
+}
 section{
     width: 100%;
     height: 90vh;
@@ -267,7 +275,37 @@ section{
  box-shadow: 0 0 40px rgb(0, 78, 109);
 }
 
-
+body.dark-mode {
+    background: linear-gradient(to bottom, #121212, #333);
+    color: #fff;
+  }
+  
+  nav.dark-mode {
+    background-color: #222;
+  }
+  
+  nav ul li a.dark-mode {
+    color: #fff;
+  }
+  
+  .dark-mode-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .dark-mode-btn:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  /* Dark Mode Styles for Button */
+  body.dark-mode .dark-mode-btn {
+    color: #fff;
+  }
 
 @media (max-width:884px) {
     body{
