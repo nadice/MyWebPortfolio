@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Ice's Projects</title>
+    <link rel="stylesheet" href="styles/pstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="scroll-page">
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Ice</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="quizzes.html">Quizzes</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="proj.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="hobbies.html">Hobbies</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+          <div class="links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="quizzes.html">Quizzes</a>
+              <a href="proj.html">Projects</a>
+              <a href="hobbies.html">Hobbies</a>
+              <a href="contact.html">Contact Us</a>
+              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+      </div>
+    </nav>
+    <section class="project-section">
+        <h1>My Projects</h1>
+        <div class="project-grid">
+      
+          <div class="project-card">
+            <img src="imagas/1st.png" alt="Cookie Website">
+            <h3>My First Portfolio</h3>
+            <p>I made this when I was in 1st year, 1st semester.</p>
+            <span>Tools: HTML & CSS</span>
+            <a href="projects/sana portfolio/index.html" class="btn-details">See Details</a>
+          </div>
+      
+          <div class="project-card">
+            <img src="imagas/2nd.png" alt="Student System">
+            <h3>Slambook duo</h3>
+            <p>1st duo project with my friend.</p>
+            <span>Tools: HTML & CSS</span>
+            <a href="projects/Final Slambook/index.html" class="btn-details">See Details</a>
+          </div>
+      
+          <div class="project-card">
+            <img src="imagas/3rd.png" alt="Netflix Clone">
+            <h3>Harry Style Website</h3>
+            <p>a trio project</p>
+            <span>Tools: HTML, CSS, JavaScript</span>
+            <a href="projects/my copy/index.html" class="btn-details">See Details</a>`
+          </div>
+        </div>
+
+        
+      </section>
+      <section class="cert-section">
+        <h1>My Certificates</h1><div class="cert-grid">
+          <!-- Certification 1 -->
+          <div class="cert-card">
+            <img src="imagas/slay.jpg" alt="Certification 1">
+            <h3> Introduction to IoT and Digital 
+              Transformation</h3>
+            <a href="about/_certificate_bernadetteemata03-gmail-com_3b4d38b4-7ca8-44ce-bc6f-083da293eec9.pdf" target="_blank" class="cert-btn">View Certificate</a>
+          </div>
+      
+          <!-- Certification 2 -->
+          <div class="cert-card">
+            <img src="imagas/slay.jpg" alt="Certification 2">
+            <h3> Introduction to Cybersecurity</h3>
+            <a href="about/_certificate_bernadetteemata03-gmail-com_3786f360-daac-482f-9f92-6a424dc16bf9.pdf" target="_blank" class="cert-btn">View Certificate</a>
+          </div></section>
+          <footer class="contact-footer">
+            <div class="footer-content">
+              <p><strong>Email:</strong> bernadetteemata03@email.com</p>
+              <p><strong>Phone:</strong> +63 912 345 6789</p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/nadice" target="_blank">github.com</a></p>
+              <p><strong>LinkedIn:</strong> <a href="https://api.linkedin.com/login" target="_blank">linkedin.com</a></p>
+            </div>
+            <p class="footer-copy">© 2025 Your Ice Emata. All rights reserved.</p>
+          </footer>
+        
+    
+       
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>

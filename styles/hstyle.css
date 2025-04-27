@@ -1,0 +1,280 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(255,255,255),  rgb(182, 210, 255));
+}
+body.scroll-page {
+    overflow-y: auto; 
+    height: auto;
+  }
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.logo span{
+    color: rgb(0, 78, 109);
+    text-shadow: 0 0 10px rgb(0, 78, 109);
+}
+
+.hamburg, .cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: black;
+    font-size: 2rem;
+    display: none;
+}
+
+.nav-container .links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 78, 109);
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+
+.nav-container .contact-btn{
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 78, 109);
+    transition: 0.2s linear;
+}
+
+.nav-container .contact-btn a{
+    color: white;
+    transition: 0.3s linear;
+}
+
+.nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
+    background-color: rgb(0, 78, 109);
+    color: white;
+}
+
+.nav-container .links a:hover{
+    color: rgb(0, 78, 109);
+}
+.hobbies-section {
+    padding: 4rem 2rem;
+    background: transparent;
+    text-align: center;
+  }
+  .dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightness(40%) blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover{
+    background-color: rgb(0, 78, 109);
+}
+
+  
+  .hobbies-section h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Grid layout */
+  .hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Card style */
+  .hobby-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(6px);
+  }
+  
+  .hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Image inside the card */
+  .hobby-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Card content */
+  .hobby-card h3 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #34495e;
+    font-weight: 600;
+  }
+  
+  .hobby-card p {
+    font-size: 0.95rem;
+    color: #566573;
+    padding: 0 1rem;
+    margin: 0.5rem 0 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Link button */
+  .see-hobbies-btn {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 12px;
+    background-color: #7d9ae4;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .see-hobbies-btn:hover {
+    background-color: #587fce;
+  }
+  @media (max-width:884px) {
+    body{
+        overflow-y: visible;
+    }
+
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,.cancel{
+        display: block;
+    }
+    .cancel{
+        color: white;
+    }}
+    .contact-footer {
+      background: linear-gradient(to right, #e0ecff, #c3d9ff);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #333;
+      border-top: 1px solid #ccc;
+    }
+    
+    .footer-content p {
+      margin-bottom: 0.7rem;
+      line-height: 1.4;
+    }
+    
+    .footer-content a {
+      color: #004b6d;
+      text-decoration: none;
+    }
+    
+    .footer-content a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-copy {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    
+  .site-footer p {
+    margin-bottom: 1rem;
+  }
+    .site-footer {
+        text-align: center;
+        padding: 1rem 0;
+        background: linear-gradient(to right, #e0ecff, #c3d9ff);
+        font-size: 0.9rem;
+        color: #333;
+        border-top: 1px solid #ccc;
+        margin-top: 2rem;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .site-footer p {
+      margin-bottom: 1rem;
+    }

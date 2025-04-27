@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+
+body{
+    background: url(./IMG/bg1.gif);
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    color: #f589b6;
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
+}
+
+
+#Bautista{
+    float: left;
+    padding-left: 400px;
+    width: 400px;   
+}
+
+#Emata{
+    float: right;
+    padding-right: 400px;
+    width: 400px;
+}
+
+.profiles img:hover{
+    -webkit-filter: drop-shadow(5px 5px 10px  #6b0584);
+  filter: drop-shadow(5px 5px 10px #6b0584);
+  animation-name: move-up-down;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-up-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.name {
+    font-family: 'Play', sans-serif;
+    color: #f589b6;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+#happy{
+    float: left;
+    padding-left: 520px;
+    width: 400px;
+    font-size: 50px;
+}
+
+#berna{
+    float: right;
+    padding-right: 260px;
+    width: 400px;
+    font-size: 50px;
+
+}

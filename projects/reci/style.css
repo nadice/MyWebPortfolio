@@ -1,0 +1,82 @@
+
+                *{
+                    box-sizing: border-box;
+                    font-family: 'Candara', sans-serif;
+                }
+                body{
+                    margin:0;
+                    background-image: url(./IMAGES/bg1.jpg);
+                }
+
+                .flex-container {
+                 display:inline-flex;
+                     background-attachment: fixed;
+                     flex-flow: row wrap;
+                     padding: 140px 80px;
+                     justify-content: center;
+                }
+                .flex-container:hover {
+                    transform: scale(1.05);
+                }
+                .desc{
+                    position: relative;
+                    font-size: 1rem;
+                    max-width: max-content;
+                }
+                .desc::after{
+                    content: "";
+                    position: absolute;
+                    height: 4px;
+                    left: calc(var(-- padding)* -1);
+                    bottom: 0;
+                    width: calc(100% + var(-- padding));
+                    background: var(--clr-accent-400);
+                    transform: scalex(0);
+                    transform-origin: left;
+                    transition: 500ms ease;
+                }
+                .flex-container:hover.desc::after{
+                    transform: scaleX(1);
+                }
+    
+                .flex-container > div {
+                    max-width: 1200px;
+                    margin: 6px;;
+                    background: #f2f2f2;
+                    overflow: auto;
+                }
+               .h2{
+                   text-align: center;
+               }
+            
+                .picnImo{
+                    margin: 5px;
+                    border: 1px solid rgb(204, 204, 204);
+                    float: left;
+                    width: 390px;
+                }
+                .picnImo img{
+                    width: 100%;
+                    height: 240px;
+                }
+                .desc{
+                    padding: 15px;
+                    text-align: center;
+                }
+                .padTOP{
+                    padding: 15px;
+                    text-align: center;
+                }
+                .idpic-icon{
+                    width: 120px;
+                    border-radius: 30%;
+                    background: #fff;
+                    padding: 7px;
+                  
+                }
+                .social-media img{
+                    width: 40px;
+                    margin: 30px 5px;
+                    cursor: pointer;
+                 }
+              

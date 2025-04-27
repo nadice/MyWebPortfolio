@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Ice's Quizzes</title>
+    <link rel="stylesheet" href="./styles/qstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="scroll-page">
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Ice</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="quizzes.html">Quizzes</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="proj.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="hobbies.html">Hobbies</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+          <div class="links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="quizzes.html">Quizzes</a>
+              <a href="proj.html">Projects</a>
+              <a href="hobbies.html">Hobbies</a>
+              <a href="contact.html">Contact Us</a>
+              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+      </div>
+    </nav>
+    <main>
+        <h1 class="h1quiz">My Quiz Scores</h1>
+        <div class="container">
+          <div class="quiz-card">
+            <img class="qimg" src="quizzes/pt1.png" alt="Quiz 1">
+            <div class="quiz-content">
+              <div class="quiz-title">PRE-TEST 1: ADVANCE HCI</div>
+              <div class="score">Score: 8/15 <br>On the identification i got 3 right`that was marked wrong.</div>
+            </div>
+          </div>
+      
+          <div class="quiz-card">
+            <img src="quizzes/pt2.png" alt="Quiz 2">
+            <div class="quiz-content">
+              <div class="quiz-title">PRE-TEST 2: User-Centered Design & Research Methods</div>
+              <div class="score">Score: 8/15 <br> On the identification i got 3 right`that was marked wrong.</div>
+            </div>
+          </div>
+      
+          <div class="quiz-card">
+            <img src="quizzes/pt3.png" alt="Quiz 3">
+            <div class="quiz-content">
+              <div class="quiz-title">PRE-TEST 3: Usability Principles & Heuristic Evaluationo</div>
+              <div class="score">Score: 10/15 <br> On the identification i got 2 right`that was marked wrong.</div>
+            </div>
+          </div>
+    
+          
+          <div class="quiz-card">
+            <img src="quizzes/pt4.png" alt="Quiz 4">
+            <div class="quiz-content">
+              <div class="quiz-title">PRE-TEST 4: Interaction Design & Prototyping</div>
+              <div class="score">Score: 9/15 <br>On the identification i got 1 right`that was marked wrong.</div>
+            </div>
+          </div>
+    
+          
+          <div class="quiz-card">
+            <img src="quizzes/pt5.png" alt="Quiz 5">
+            <div class="quiz-content">
+              <div class="quiz-title">PRE-TEST 5: Information Architecture (IA) and Navigation Design </div>
+              <div class="score">Score: 9/15 <br> On the identification i got 2 right`that was marked wrong.</div>
+            </div>
+          </div>
+    
+          
+          <div class="quiz-card">
+            <img src="quizzes/post1.jpg" alt="pQuiz 1">
+            <div class="quiz-content">
+              <div class="quiz-title">POST-TEST 1: JavaScript Intro</div>
+              <div class="score">Score: 16/20</div>
+            </div>
+          </div>
+    
+          <div class="quiz-card">
+            <img src="quizzes/post2.jpg" alt="pQuiz 2">
+            <div class="quiz-content">
+              <div class="quiz-title">POST-TEST 2: User-Centered Design & Research Methods</div>
+              <div class="score">Score: 18/20</div>
+            </div>
+          </div>
+
+          
+          <div class="quiz-card">
+            <img src="quizzes/post3.jpg" alt="pQuiz 2">
+            <div class="quiz-content">
+              <div class="quiz-title">POST-TEST 3: User-Centered Design & Research Methods</div>
+              <div class="score">Score: 15/20</div>
+            </div>
+          </div>
+    
+          <div class="quiz-card">
+            <img src="quizzes/longquiz.jpg" alt="Quiz 2">
+            <div class="quiz-content">
+              <div class="quiz-title">Midterm Long Quiz</div>
+              <div class="score">Score: 22/40</div>
+            </div>
+          </div>
+    
+          <div class="quiz-card">
+            <img src="quizzes/midterm.jpg" alt="Quiz 2">
+            <div class="quiz-content">
+              <div class="quiz-title">Midterm Exam</div>
+              <div class="score">Score: 60/60</div>
+            </div>
+          </div>
+    </main>
+
+    <footer class="contact-footer">
+      <div class="footer-content">
+        <p><strong>Email:</strong> bernadetteemata03@email.com</p>
+        <p><strong>Phone:</strong> +63 912 345 6789</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/nadice" target="_blank">github.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://api.linkedin.com/login" target="_blank">linkedin.com</a></p>
+      </div>
+      <p class="footer-copy">© 2025 Your Ice Emata. All rights reserved.</p>
+    </footer>
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
