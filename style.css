@@ -363,4 +363,30 @@ section{
   
 .site-footer p {
   margin-bottom: 1rem;
+}.content .typewriter span {
+    color: rgb(0, 78, 109);
+    font-size: 2.5rem;
+    text-shadow: 0 0 5px rgb(0, 78, 109);
+    position: relative;
+    transition: 0.3s linear;
+    display: inline-block;
 }
+
+/* Remove the blinking cursor completely */
+.typewriter span::after {
+    display: none;
+}
+
+/* Typing words animation */
+.typewriter span::before {
+    content: "";
+    animation: words 9s steps(1) infinite;
+}
+
+@keyframes words {
+    0% { content: "Student-Athlete"; }
+    33% { content: "Make-up Artist"; }
+    66% { content: "Developer"; }
+    100% { content: "Student-Athlete"; }
+}
+
