@@ -115,7 +115,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 50vh; /* Full screen height */
     backdrop-filter: brightness(40%) blur(3px);
     background: rgba(0, 0, 0, 0.6); /* Optional: a slight dark background */
     box-shadow: 0 0 20px black;
@@ -129,7 +129,7 @@ nav{
 
 .dropdown .links a{
     color: white;
-    display: flex;
+    display: block;
     text-decoration: none;
     justify-content: center;
     padding: 15px 0;
