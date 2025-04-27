@@ -275,38 +275,6 @@ section{
  box-shadow: 0 0 40px rgb(0, 78, 109);
 }
 
-body.dark-mode {
-    background: linear-gradient(to bottom, #121212, #333);
-    color: #fff;
-  }
-  
-  nav.dark-mode {
-    background-color: #222;
-  }
-  
-  nav ul li a.dark-mode {
-    color: #fff;
-  }
-  
-  .dark-mode-btn {
-    background: none;
-    border: none;
-    color: #333;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 5px 10px;
-  }
-  
-  .dark-mode-btn:hover {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-  }
-  
-
-  body.dark-mode .dark-mode-btn {
-    color: #fff;
-  }
-
 @media (max-width:884px) {
     body{
         overflow-y: visible;

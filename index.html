@@ -32,8 +32,8 @@
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="proj.html">Projects</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="hobbies.html">Hobbies</a></div>
                 <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
-            </div>
-              <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
+             </div>
+             
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
@@ -91,28 +91,6 @@
                 navbar.style.transform = "translateY(-500px)"
             }
             const toggleButton = document.getElementById('dark-mode-toggle');
-
-toggleButton.addEventListener('click', () => {
-  // Toggle dark mode on body and navbar
-  document.body.classList.toggle('dark-mode');
-  document.querySelector('nav').classList.toggle('dark-mode');
-  toggleButton.classList.toggle('dark-mode');  // Change button style
-
-  // Optionally, save the dark mode preference in localStorage
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('darkMode', 'enabled');
-  } else {
-    localStorage.setItem('darkMode', 'disabled');
-  }
-});
-
-// Check for dark mode preference on page load
-if (localStorage.getItem('darkMode') === 'enabled') {
-  document.body.classList.add('dark-mode');
-  document.querySelector('nav').classList.add('dark-mode');
-  toggleButton.classList.add('dark-mode');
-}
-
 
         </script>
         

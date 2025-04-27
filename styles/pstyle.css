@@ -289,24 +289,8 @@ nav{
     background-color: #587fce;
     transform: scale(1.05);
   }
-  .dark-mode-btn {
-    background: none;
-    border: none;
-    color: #333;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 5px 10px;
-  }
   
-  .dark-mode-btn:hover {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-  }
-  
-
-  body.dark-mode .dark-mode-btn {
-    color: #fff;
-  }
+ 
   
   @media (max-width:884px) {
     body{
