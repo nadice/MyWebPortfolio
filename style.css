@@ -267,9 +267,7 @@ section{
  box-shadow: 0 0 40px rgb(0, 78, 109);
 }
 
-body.dark-mode .dark-mode-btn {
-    color: #fff;
-  }
+
 
 @media (max-width:884px) {
     body{
