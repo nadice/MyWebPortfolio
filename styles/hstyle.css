@@ -112,7 +112,7 @@ nav{
     background: transparent;
     text-align: center;
   }
-  .dropdown {
+  .dropdown {     
     position: absolute;
     z-index: 9999;
     top: 0;
