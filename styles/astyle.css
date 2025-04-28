@@ -111,11 +111,11 @@ nav{
 
 .dropdown {
   z-index: 1000;
-  position: fixed; 
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 50vh; /* Full screen height */
+  height: vh; /* Full screen height */
   backdrop-filter: brightness(40%) blur(3px);
   background: rgba(0, 0, 0, 0.6); 
   box-shadow: 0 0 20px black;
@@ -303,27 +303,35 @@ nav{
   }
 
   .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
     margin-top: 1rem;
   }
   
-  /* Button Style */
-  .btn button {
+  /* Specific Button Style */
+  .btn-download {
     display: inline-block;
     margin: 0 1rem;
     padding: 0.5rem 1rem;
     background-color: #7d9ae4;
     color: #fff;
     text-decoration: none;
+    border: none; /* add this to remove default button border */
     border-radius: 12px;
     font-size: 0.9rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* makes it look clickable */
   }
   
   /* Button Hover Effect */
-  .btn button:hover {
+  .btn-download:hover {
     background-color: #587fce;
     transform: scale(1.05);
   }
+  
 
   .education-card {
     max-width: 1100px;

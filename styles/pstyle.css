@@ -107,8 +107,8 @@ nav{
 .nav-container .links a:hover{
     color: rgb(0, 78, 109);
 }.dropdown {
-  z-index: 1000;
-  position: fixed; 
+  z-index: 9999;
+  position:absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -141,6 +141,7 @@ nav{
   transform: translateY(0); 
 }
 .project-section {
+  z-index: 1;
     padding: 3rem 1.5rem;
     background: #f2f6fc;
     background: transparent;

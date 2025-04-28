@@ -107,42 +107,43 @@ nav{
 .nav-container .links a:hover{
     color: rgb(0, 78, 109);
 }
-
 .dropdown {
-    z-index: 1000;
-    position: fixed; 
+    z-index: 100;
+    position: fixed; /* fixed to screen */
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh; /* Full screen height */
+    height: 100vh;
     backdrop-filter: brightness(40%) blur(3px);
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 20px black;
-    display: flex;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: none; /* hide by default */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(-100%); 
-    transition: transform 0.3s ease-in-out; 
 }
 
-.dropdown .links a{
+/* When active (for mobile only) */
+.dropdown.show {
+    display: flex;
+    transform: translateY(0);
+}
+
+/* Dropdown links */
+.dropdown .links a {
     color: white;
-    display: block;
     text-decoration: none;
-    justify-content: center;
     padding: 15px 0;
-    align-items: center;
-    transition: 0.2s linear;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.3s;
 }
 
-.dropdown .links a:hover{
+.dropdown .links a:hover {
     background-color: rgb(0, 78, 109);
 }
-.dropdown.show {
-    transform: translateY(0); 
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -258,21 +259,23 @@ nav{
     top: 0;
     transform: translateY(-500px);
     width: 100%;
-    height: auto;
+    height: 50vh;
     backdrop-filter: brightness(40%) blur(3px);
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
 
-.dropdown .links a{
+.dropdown .links a {
+    font-size: 16px;      /* or whatever size you want */
+    font-family: Arial, sans-serif; /* make sure the font matches */
+    line-height: 1.6;     /* spacing between links */
+    text-align: center;
     color: white;
-    display: flex;
+    display: block;       /* very important: makes each <a> full-width */
+    padding: 10px 0;      /* vertical padding */
     text-decoration: none;
-    justify-content: center;
-    padding: 15px 0;
-    align-items: center;
-    transition: 0.2s linear;
-}
+  }
+  
 
 .dropdown .links a:hover{
     background-color: rgb(0, 78, 109);
@@ -405,6 +408,9 @@ nav{
       .contact-section p {
         font-size: 1rem;
       }
+      .dropdown {
+        height: 50avh;
+    }
    
 }
 .site-footer {

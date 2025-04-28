@@ -26,16 +26,17 @@
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i> <!-- ✅ move it here -->
+          
           <div class="links">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="quizzes.html">Quizzes</a>
-              <a href="proj.html">Projects</a>
-              <a href="hobbies.html">Hobbies</a>
-              <a href="contact.html">Contact Us</a>
-              <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="proj.html">Projects</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="contact.html">Contact Us</a>
           </div>
-      </div>
+        </div>
     </nav>
 
     <section class="contact-section">
@@ -68,16 +69,16 @@
     <script>
       AOS.init({offset:0});
     </script>
-    <script>
-        function hamburg(){
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(0px)"
-        }
-        function cancel(){
-            const navbar = document.querySelector(".dropdown")
-            navbar.style.transform = "translateY(-500px)"
-        }
-       
-    </script>
-</body>
+  
+<script>
+    function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.classList.add("show"); // Add the .show class
+    }
+
+    function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.classList.remove("show"); // Remove the .show class
+    }
+</script>
 </html>
